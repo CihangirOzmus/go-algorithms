@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(stacks.CalPoints([]string{"1", "2", "+", "C", "5", "D"}))
+	fmt.Println(stacks.IsValid("["))
 }
