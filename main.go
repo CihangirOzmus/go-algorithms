@@ -7,5 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println(stacks.IsValid("["))
+	mst := stacks.Constructor()
+	fmt.Println(mst.GetMin())
 }
