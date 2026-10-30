@@ -1,7 +1,12 @@
 package linkedlist
 
-func ReverseList(head *ListNode) *ListNode {
-	var prev *ListNode
+type Node struct {
+	Val  int
+	Next *Node
+}
+
+func ReverseList(head *Node) *Node {
+	var prev *Node
 	curr := head
 	for curr != nil {
 		temp := curr.Next
