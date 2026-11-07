@@ -35,7 +35,7 @@ func TestFIFOOrder(t *testing.T) {
 		}
 	}
 	if !q.IsEmpty() {
-		t.Fatal("queue should be empty after dequeuing everything")
+		t.Fatal("queue should be empty after dequeue everything")
 	}
 }
 
