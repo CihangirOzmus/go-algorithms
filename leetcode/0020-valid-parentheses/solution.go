@@ -1,4 +1,4 @@
-package stack
+package validparentheses
 
 func IsValid(s string) bool {
 	prMap := map[rune]rune{

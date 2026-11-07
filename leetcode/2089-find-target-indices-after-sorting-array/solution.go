@@ -1,4 +1,4 @@
-package array
+package findtargetindicesaftersortingarray
 
 import "sort"
 

@@ -1,4 +1,4 @@
-package linkedlist
+package reverselinkedlist
 
 type Node struct {
 	Val  int

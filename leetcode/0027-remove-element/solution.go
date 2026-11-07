@@ -1,4 +1,4 @@
-package array
+package removeelement
 
 func RemoveElement(nums []int, val int) int {
 	j := 0

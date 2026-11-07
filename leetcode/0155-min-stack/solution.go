@@ -1,4 +1,4 @@
-package stack
+package minstack
 
 type MinStack struct {
 	stack    []int

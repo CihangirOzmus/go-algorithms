@@ -1,4 +1,4 @@
-package array
+package findthedistancevaluebetweentwoarrays
 
 func FindTheDistanceValue(arr1 []int, arr2 []int, d int) int {
 	count := 0

@@ -1,4 +1,4 @@
-package array
+package maxconsecutiveones
 
 func FindMaxConsecutiveOnes(nums []int) int {
 	maxCount := 0

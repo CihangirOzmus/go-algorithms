@@ -1,4 +1,4 @@
-package string
+package countdaysspenttogether
 
 import (
 	"strconv"
@@ -16,12 +16,13 @@ func CountDaysTogether(arriveAlice string, leaveAlice string, arriveBob string, 
 	return 0
 }
 
+// toDay converts "MM-DD" to the day of the year (non-leap), e.g. "01-01" -> 1.
 func toDay(str string) int {
 	daysInMonths := []int{0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
 	parts := strings.Split(str, "-")
 	month, _ := strconv.Atoi(parts[0])
 	day, _ := strconv.Atoi(parts[1])
-	for i := month; i <= 12; i++ {
+	for i := 1; i < month; i++ {
 		day += daysInMonths[i]
 	}
 	return day

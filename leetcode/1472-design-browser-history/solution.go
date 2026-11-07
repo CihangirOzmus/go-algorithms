@@ -1,4 +1,4 @@
-package browser_history
+package designbrowserhistory
 
 type ListNode struct {
 	val  string

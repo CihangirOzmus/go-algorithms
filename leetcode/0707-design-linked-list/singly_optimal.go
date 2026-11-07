@@ -1,4 +1,4 @@
-package linkedlist
+package designlinkedlist
 
 type OptimalSinglyLinkedList struct {
 	head *ListNode

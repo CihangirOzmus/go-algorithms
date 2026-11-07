@@ -1,4 +1,4 @@
-package array
+package replaceelementswithgreatestelementonrightside
 
 func ReplaceElements(arr []int) []int {
 	j := len(arr) - 1
