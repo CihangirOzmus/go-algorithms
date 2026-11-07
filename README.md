@@ -9,6 +9,8 @@ leetcode/NNNN-slug/     one package per LeetCode problem (4-digit number + URL s
   solution.go           main solution; alternatives go in solution_<approach>.go
   solution_test.go
 neetcode/slug/          NeetCode-only problems (not on LeetCode)
+datastructures/name/    practice implementations, not tied to a problem
+  <approach>.go         e.g. queue/linked_list.go, queue/array.go
 internal/ds/            shared ListNode / TreeNode + test builders (NewList, NewTree)
 scripts/new.sh          problem scaffold
 ```
@@ -16,6 +18,8 @@ scripts/new.sh          problem scaffold
 - Package name = slug without dashes (`0020-valid-parentheses` → `package validparentheses`).
 - Every problem is its own package, so `Constructor`, `ListNode` and helper
   names never collide.
+- Data structures: folder/package = structure name (`queue`), file = how it is
+  implemented (`linked_list.go`). Create these by hand (`mkdir -p datastructures/queue`).
 - Topics and difficulty are tracked in the table below, not in the folder tree.
 
 ## Usage
@@ -25,6 +29,7 @@ make new N=1 SLUG=two-sum          # -> leetcode/0001-two-sum/
 make new N=nc SLUG=some-problem    # -> neetcode/some-problem/
 make test                          # all problems
 make test P=0020                   # one problem
+go test ./datastructures/...       # all data structures
 ```
 
 ## Problems
@@ -44,3 +49,10 @@ make test P=0020                   # one problem
 | 1929 | [Concatenation of Array](leetcode/1929-concatenation-of-array) | Easy | Array | ✅ |
 | 2089 | [Find Target Indices After Sorting Array](leetcode/2089-find-target-indices-after-sorting-array) | Easy | Array, Sorting | |
 | 2409 | [Count Days Spent Together](leetcode/2409-count-days-spent-together) | Easy | Math, String | |
+
+## Data structures
+
+| Structure | Implementation | Source |
+|-----------|----------------|--------|
+| Linked list | [Singly](datastructures/linkedlist/singly_linked_list.go), [singly optimal](datastructures/linkedlist/singly_linked_list_optimal.go), [doubly](datastructures/linkedlist/doubly_linked_list.go) | LeetCode 0707 |
+| Queue | [Linked list](datastructures/queue/linked_list_queue.go) | NeetCode |
