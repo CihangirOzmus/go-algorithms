@@ -36,16 +36,20 @@ go test ./datastructures/...       # all data structures
 
 | #    | Problem | Difficulty | Topics | NeetCode |
 |------|---------|------------|--------|----------|
+| 0001 | [Two Sum](leetcode/0001-two-sum) | Easy | Array, Hash Table | ✅ |
 | 0020 | [Valid Parentheses](leetcode/0020-valid-parentheses) | Easy | Stack, String | ✅ |
 | 0027 | [Remove Element](leetcode/0027-remove-element) | Easy | Array, Two Pointers | ✅ |
 | 0155 | [Min Stack](leetcode/0155-min-stack) | Medium | Stack, Design | ✅ |
 | 0206 | [Reverse Linked List](leetcode/0206-reverse-linked-list) | Easy | Linked List | ✅ |
+| 0217 | [Contains Duplicate](leetcode/0217-contains-duplicate) | Easy | Array, Hash Table | ✅ |
+| 0225 | [Implement Stack using Queues](leetcode/0225-implement-stack-using-queues) | Easy | Stack, Queue, Design | ✅ |
 | 0485 | [Max Consecutive Ones](leetcode/0485-max-consecutive-ones) | Easy | Array | |
 | 0682 | [Baseball Game](leetcode/0682-baseball-game) | Easy | Stack | ✅ |
 | 0707 | [Design Linked List](leetcode/0707-design-linked-list) | Medium | Linked List, Design | ✅ |
 | 1299 | [Replace Elements with Greatest Element on Right Side](leetcode/1299-replace-elements-with-greatest-element-on-right-side) | Easy | Array | ✅ |
 | 1385 | [Find the Distance Value Between Two Arrays](leetcode/1385-find-the-distance-value-between-two-arrays) | Easy | Array, Binary Search | |
 | 1472 | [Design Browser History](leetcode/1472-design-browser-history) | Medium | Linked List, Design | ✅ |
+| 1700 | [Number of Students Unable to Eat Lunch](leetcode/1700-number-of-students-unable-to-eat-lunch) | Easy | Array, Queue, Simulation | ✅ |
 | 1929 | [Concatenation of Array](leetcode/1929-concatenation-of-array) | Easy | Array | ✅ |
 | 2089 | [Find Target Indices After Sorting Array](leetcode/2089-find-target-indices-after-sorting-array) | Easy | Array, Sorting | |
 | 2409 | [Count Days Spent Together](leetcode/2409-count-days-spent-together) | Easy | Math, String | |
@@ -55,4 +59,4 @@ go test ./datastructures/...       # all data structures
 | Structure | Implementation | Source |
 |-----------|----------------|--------|
 | Linked list | [Singly](datastructures/linkedlist/singly_linked_list.go), [singly optimal](datastructures/linkedlist/singly_linked_list_optimal.go), [doubly](datastructures/linkedlist/doubly_linked_list.go) | LeetCode 0707 |
-| Queue | [Linked list](datastructures/queue/linked_list_queue.go) | NeetCode |
+| Queue | [Linked list](datastructures/queue/linked_list_queue.go), [slice](datastructures/queue/slice_queue.go) | NeetCode |
