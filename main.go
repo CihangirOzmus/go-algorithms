@@ -1,9 +1,11 @@
 package main
 
 import (
-	containsduplicate "github.com/cihangirozmus/go-algorithms/leetcode/0217-contains-duplicate"
+	"fmt"
+
+	fibonaccinumber "github.com/cihangirozmus/go-algorithms/leetcode/0509-fibonacci-number"
 )
 
 func main() {
-	containsduplicate.ContainsDuplicate([]int{1, 2, 3, 4})
+	fmt.Println(fibonaccinumber.Fib(18))
 }

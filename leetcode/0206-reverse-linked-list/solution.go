@@ -16,3 +16,14 @@ func ReverseList(head *Node) *Node {
 	}
 	return prev
 }
+
+func RecursivelyReverseList(head *Node) *Node {
+	if head == nil || head.Next == nil {
+		return head
+	}
+
+	tail := RecursivelyReverseList(head.Next)
+	head.Next.Next = head
+	head.Next = nil
+	return tail
+}
